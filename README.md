@@ -1,2 +1,4 @@
-# plaque
-slack inspired podio
+
+    npm install
+
+    npm start
