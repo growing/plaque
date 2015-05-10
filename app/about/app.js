@@ -1,32 +1,10 @@
-(function() {
+(function () {
+  'use strict';
 
-    var skynet = angular.module('controllerExample', []);
+  app.controller('aboutController', function ($scope) {
 
-    skynet.controller('SettingsController2', function($scope) {
+    $scope.hello = "HELLO";
 
-        $scope.name = "John Smith";
-        $scope.contacts = [
-        {type:'phone', value:'408 555 1212'},
-        {type:'email', value:'john.smith@example.org'} ];
-
-        $scope.greet = function() {
-            alert($scope.name);
-        };
-
-        $scope.addContact = function() {
-            $scope.contacts.push({type:'email', value:'yourname@example.org'});
-        };
-
-        $scope.removeContact = function(contactToRemove) {
-            var index = $scope.contacts.indexOf(contactToRemove);
-            $scope.contacts.splice(index, 1);
-        };
-
-        $scope.clearContact = function(contact) {
-            contact.type = 'phone';
-            contact.value = '';
-        };
-
-    })
+  });
 
 })();

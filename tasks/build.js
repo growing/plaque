@@ -16,6 +16,7 @@ var paths = {
     jsCodeToTranspile: [
         'app/**/*.js',
         '!app/about/*',
+        '!app/app.js',
         '!app/main.js',
         '!app/spec.js',
         '!app/node_modules/**',
@@ -24,6 +25,7 @@ var paths = {
     ],
     toCopy: [
         'app/about/*',
+        'app/app.js',
         'app/main.js',
         'app/spec.js',
         'app/node_modules/**',
